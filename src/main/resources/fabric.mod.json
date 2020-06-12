@@ -1,13 +1,14 @@
 {
   "schemaVersion": 1,
-  "id": "databreaker",
-  "version": "0.2.2",
-  "name": "Databreaker",
+  "id": "databreakerlower",
+  "version": "0.3.0",
+  "name": "DataBreakerLower",
   "description": "Removes DataFixers from executing.",
   "authors": [
-    "SuperCoder79"
+    "SuperCoder79",
+    "Chocohead"
   ],
-  "license": "CC0-1.0",
+  "license": "MPL-2.0",
   "icon": "assets/databreaker/icon.png",
   "environment": "*",
   "entrypoints": {
@@ -21,5 +22,8 @@
   "depends": {
     "fabricloader": ">=0.7.8+build.189",
     "minecraft": ">=1.14-"
+  },
+  "breaks": {
+    "databreaker": "*"
   }
 }
