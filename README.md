@@ -15,6 +15,6 @@ repositories {
 ```
 2. Add this to your build script in `dependencies`:
 ```
-modRuntime ("com.github.Chocohead:Data-Breaker-Lower:<whatever the latest commit hash is>")
+modRuntime ("com.github.TheGlitch76:Volde-Data-Breaker-Lower:<whatever the latest commit hash is>")
 ```
 3. cry

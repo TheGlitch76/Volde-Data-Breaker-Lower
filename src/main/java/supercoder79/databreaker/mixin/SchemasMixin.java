@@ -7,6 +7,7 @@
  */
 package supercoder79.databreaker.mixin;
 
+import com.mojang.datafixers.Dynamic;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -16,22 +17,21 @@ import org.spongepowered.asm.mixin.Overwrite;
 import com.mojang.datafixers.DSL.TypeReference;
 import com.mojang.datafixers.DataFixer;
 import com.mojang.datafixers.schemas.Schema;
-import com.mojang.serialization.Dynamic;
-
-import net.minecraft.datafixer.Schemas;
 
 import supercoder79.databreaker.NoopSchema;
 
-@Mixin(Schemas.class)
+import net.minecraft.util.datafix.DataFixesManager;
+
+@Mixin(DataFixesManager.class)
 class SchemasMixin {
 	/**
 	 * @author Chocohead
 	 * @reason DFU is huge and slow, so if it isn't needed we save a lot
 	 */
 	@Overwrite
-	private static DataFixer create() {
+	private static DataFixer createFixer() {
 		return new DataFixer() {
-			private final Logger logger = LogManager.getLogger("DataBreakerLower");
+			private final Logger logger = LogManager.getLogger("VoldeDataBreakerLower");
 			private final Schema noopSchema = new NoopSchema();
 
 			@Override

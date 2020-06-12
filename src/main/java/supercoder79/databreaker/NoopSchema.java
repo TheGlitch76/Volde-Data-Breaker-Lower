@@ -17,11 +17,11 @@ import com.mojang.datafixers.types.Type;
 import com.mojang.datafixers.types.templates.TypeTemplate;
 import com.mojang.datafixers.types.templates.TaggedChoice.TaggedChoiceType;
 
-import net.minecraft.SharedConstants;
+import net.minecraft.util.SharedConstants;
 
 public class NoopSchema extends Schema {
 	public NoopSchema() {
-		super(SharedConstants.getGameVersion().getWorldVersion(), null);
+		super(SharedConstants.getVersion().getWorldVersion(), null);
 	}
 
 	@Override
@@ -37,7 +37,7 @@ public class NoopSchema extends Schema {
 	@Override
 	public void registerTypes(Schema schema, Map<String, Supplier<TypeTemplate>> entityTypes, Map<String, Supplier<TypeTemplate>> blockEntityTypes) {
 	}
-	
+
 	@Override
 	protected Map<String, Type<?>> buildTypes() {
 		return Collections.emptyMap();
