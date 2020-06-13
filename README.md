@@ -6,7 +6,7 @@ i'm not responsible if you completely screw up your world
 thanks, have a great day
 
 ## How to add this mod to your dev env
-If you have the inclination to add DataBreaker to your dev env, follow these 3 easy steps:
+If you have the inclination to add DataBreaker to your dev env, follow these ~~3~~ 5 easy steps:
 1. Merge this with your `buildscript` block:
 ```
 	buildscript {
@@ -32,6 +32,6 @@ repositories {
 ```
 4. Add this to your build script in `dependencies`:
 ```
-modRuntime ("com.github.TheGlitch76:Volde-Data-Breaker-Lower:master-SNAPSHOT")
+modRuntime ("com.github.TheGlitch76:Volde-Data-Breaker-Lower:347c0d6c73")
 ```
 5. cry
