@@ -32,6 +32,6 @@ repositories {
 ```
 4. Add this to your build script in `dependencies`:
 ```
-modRuntime ("com.github.TheGlitch76:Volde-Data-Breaker-Lower:347c0d6c73")
+implementation fg.deobf('com.github.TheGlitch76:Volde-Data-Breaker-Lower:master-SNAPSHOT')
 ```
 5. cry
