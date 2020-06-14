@@ -8,15 +8,14 @@ DFU only runs on loaded chunks, so adding Databreaker to a world that was create
 If you have the inclination to add DataBreaker to your dev env, follow these ~~3~~ 5 easy steps:
 1. Merge this with your `buildscript` block:
 ```
-	buildscript {
-		repositories {
-			maven { url='https://dist.creeper.host/Sponge/maven' }
-		}
+buildscript {
+	repositories {
+		maven { url='https://dist.creeper.host/Sponge/maven' }
 	}
 	dependencies {
-			[...]
+		[...]
         	classpath 'org.spongepowered:mixingradle:0.7-SNAPSHOT'
-    }
+    	}
 }
 ```
 2. Add this at the bottom of your `apply plugin:` group:
